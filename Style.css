@@ -112,7 +112,8 @@ button {
   font-size: 0.7rem;
   color: var(--clr-primary-400);
   box-shadow: rgba(0, 0, 0, 0.411) 0px 3px 10px;
-
+  transition: ALL 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .__icons {
@@ -129,12 +130,24 @@ button {
   border: 1px solid;
   padding: 0.4rem;
   border-radius: 1rem;
+  transition: ALL 0.2s ease-in-out;
+  cursor: pointer
+}
+
+button:hover {
+  background: #ff52c1;
+  color: var(--clr-primary-100);
+  scale: 1.1;
+}
+.fa-brands:hover {
+  color: #ff52c1;
+  scale: 1.2;
 }
 
 @media only screen and (min-width: 374px) {
   body {
-    background: var(--clr-primary-400) url(./images/bg-desktop.svg)  no-repeat ;
-    background-size:contain ;
+    background: var(--clr-primary-400) url(./images/bg-desktop.svg) no-repeat;
+    background-size: contain;
     padding: 3rem 3rem;
   }
   .__middle_section {
@@ -148,18 +161,17 @@ button {
     max-width: 90%;
   }
 
-  .__middle_section .__content h1{
+  .__middle_section .__content h1 {
     font-size: 3.2rem;
   }
 
-  .__middle_section .__content p{
+  .__middle_section .__content p {
     font-size: 1.2rem;
   }
 
   button {
     padding: 0.7rem 4rem;
     font-size: 1rem;
-
   }
   .__icons {
     justify-content: right;
