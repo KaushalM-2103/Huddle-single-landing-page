@@ -1,0 +1,168 @@
+:root {
+  --clr-primary-400: hsl(257, 40%, 49%);
+  --clr-primary-200: hsl(300, 69%, 71%);
+  --clr-primary-100: #fff;
+
+  --font-family-open-sans: "Open Sans", sans-serif;
+  --font-family-poppins: "Poppins", sans-serif;
+
+  --fw--400: 400;
+  --fw--600: 600;
+}
+/*  1. Use a more-intuitive box-sizing model. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+
+* {
+  margin: 0;
+}
+
+/*     3. Allow percentage-based heights in the application  */
+
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*    6. Improve media defaults  */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*    7. Remove built-in form typography styles  */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*    8. Avoid text overflows  */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background: var(--clr-primary-400) url(./images/bg-mobile.svg) no-repeat;
+  color: var(--clr-primary-100);
+  padding: 2rem;
+}
+
+.__heading IMG {
+  width: 9rem;
+}
+
+.__middle_section {
+  text-align: center;
+  display: grid;
+  align-items: center;
+  gap: 3rem;
+}
+.__middle_section img {
+  margin-block-start: 4rem;
+}
+
+.__middle_section .__content h1 {
+  font-family: var(--font-family-poppins);
+  font-size: 1.2rem;
+}
+
+.__middle_section .__content p {
+  font-family: var(--font-family-open-sans);
+  font-size: 0.9em;
+  margin-block: 1rem;
+}
+
+button {
+  font-family: var(--font-family-poppins);
+  padding: 0.5rem 4rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  color: var(--clr-primary-400);
+  box-shadow: rgba(0, 0, 0, 0.411) 0px 3px 10px;
+
+}
+
+.__icons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  text-align: center;
+}
+.fa-brands {
+  width: 1.9em;
+  font-size: 1em;
+  display: inline-block;
+  border: 1px solid;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+
+@media only screen and (min-width: 374px) {
+  body {
+    background: var(--clr-primary-400) url(./images/bg-desktop.svg)  no-repeat ;
+    background-size:contain ;
+    padding: 3rem 3rem;
+  }
+  .__middle_section {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 3rem;
+  }
+
+  .__middle_section img {
+    max-width: 90%;
+  }
+
+  .__middle_section .__content h1{
+    font-size: 3.2rem;
+  }
+
+  .__middle_section .__content p{
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 0.7rem 4rem;
+    font-size: 1rem;
+
+  }
+  .__icons {
+    justify-content: right;
+    margin-top: 1rem;
+  }
+}
