@@ -89,7 +89,7 @@ body {
   gap: 3rem;
 }
 .__middle_section img {
-  margin-block-start: 4rem;
+  margin-block-start: 3rem;
 }
 
 .__middle_section .__content h1 {
@@ -131,7 +131,7 @@ button {
   padding: 0.4rem;
   border-radius: 1rem;
   transition: ALL 0.2s ease-in-out;
-  cursor: pointer
+  cursor: pointer;
 }
 
 button:hover {
@@ -148,7 +148,10 @@ button:hover {
   body {
     background: var(--clr-primary-400) url(./images/bg-desktop.svg) no-repeat;
     background-size: contain;
-    padding: 3rem 3rem;
+    padding: 3rem 4rem;
+  }
+  .__middle_section img {
+    margin-block-start: 5rem;
   }
   .__middle_section {
     display: flex;
@@ -156,15 +159,15 @@ button:hover {
     text-align: left;
     gap: 3rem;
   }
-
   .__middle_section img {
-    max-width: 90%;
+    max-width: 46%;
   }
-
+  .__content {
+    max-width: 45%;
+  }
   .__middle_section .__content h1 {
-    font-size: 3.2rem;
+    font-size: 3.6rem;
   }
-
   .__middle_section .__content p {
     font-size: 1.2rem;
   }
@@ -176,5 +179,6 @@ button:hover {
   .__icons {
     justify-content: right;
     margin-top: 1rem;
+    margin-right: 2rem;
   }
 }
